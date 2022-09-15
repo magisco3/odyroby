@@ -64,7 +64,8 @@ h1{
     gap: 15px;
     border: 1px solid var(--color1);
 }
-.services-service:last-of-type{
+.services-service-last{
+    display: flex;
     width: 100%;
     border: none;
     justify-content: center;
