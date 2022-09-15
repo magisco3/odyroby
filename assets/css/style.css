@@ -1,0 +1,230 @@
+:root{
+    --color1: rgb(16, 188, 10);
+    --color2: #002855;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Times New Roman', Times, serif;
+}
+.row{
+    margin: 0;
+}
+img{
+    width: 100%;
+}
+.navbar{
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 80px;
+    -webkit-box-shadow: 0px 5px 15px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 15px -9px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 15px -9px rgba(0,0,0,0.75);
+}
+.navbar a{
+    font-weight: 700;
+    font-size: 14px;
+    transition: all 0.2s ease-in;
+    text-decoration: none;
+    color: var(--color2);
+    letter-spacing: 1px;
+}
+.navbar a:hover, .navbar a.active{
+    color: var(--color1);
+}
+.hero{
+    height: 700px;
+    padding-top: 170px;
+    background: url(../images/bg1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero h1{
+    font-size: 72px;
+}
+h1{
+    color: darkgreen;
+}
+.index-services{
+    background-color: var(--color2);
+    color: aliceblue;
+    min-height: 700px;
+}
+.services-service{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid var(--color1);
+}
+.index-services .icon{
+    width: 60px;
+    height: 60px;
+    border: 1px solid var(--color1);
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: var(--color1);
+}
+.hiring .container{
+    border: 3px solid yellow;
+    border-radius: 10px;
+}
+.index-services p{
+    display: inline-block;
+    padding-top: 20px;
+}
+.index-services h1{
+    font-size: 60px;
+}
+.why-choose-us .card{
+    border: 0;
+    border-bottom: 1px solid var(--color2);
+    border-radius: 0;
+    margin-bottom: 5px;
+}
+.why-choose-us .card:hover{
+    border: none;
+    -webkit-box-shadow: 0px 5px 15px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 15px -9px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 15px -9px rgba(0,0,0,0.75);
+}
+.why-choose-us i{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: var(--color1);
+}
+.why-choose-us, .staff, .testimonials{
+    min-height: 500px;
+    padding-top: 100px;
+}
+.contact{
+    background: url(../images/nurse3.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    padding-top: 80px;
+}
+.contact form{
+    padding: 50px;
+    background-color: rgba(225,225,225,0.2);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+}
+.contact form h2{
+    font-size: 40px;
+}
+.contact label{
+    font-weight: 700;
+}
+.contact textarea{
+    resize: none;
+    height: 150px;
+    border-color: rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+.services{
+    padding-top: 120px;
+}
+.services .row{
+    padding: 60px 0;
+}
+.btn{
+    text-transform: uppercase;
+}
+footer{
+    background-color: #002855;
+    color: whitesmoke;
+    padding-top: 100px;
+}
+footer h5{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+footer ul{
+    list-style-type: none;
+}
+footer ul li{
+    padding: 10px 0;
+    margin-bottom: 5px;
+}
+footer ul li a{
+    color: aqua;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+footer ul li a:hover{
+    color: azure;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar.fixed-top{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .navbar h4{
+        font-size: 16px;
+    }
+    .navbar-brand h4{
+        margin: 0;
+    }
+    .navbar .nav{
+        justify-content: space-between;
+        margin: 0;
+        width: 75%;
+    }
+    .navbar .nav-link{
+        padding: 0;
+        width: auto;
+        margin-left: 2px;
+    }
+    .navbar .nav-link:nth-of-type(1){
+        margin-left: 0;
+    }
+    .hero{
+        background-position-x: right;
+        padding: 0;
+    }
+    .hero div{
+        padding-top: 150px;
+        width: 100%;
+        height: 100%;
+        background: rgba(225,225,225,0.2);
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px);
+    }
+    .hero div p{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .hero h1{
+        font-size: 50px;
+    }
+    .services h1{
+        font-size: 40px;
+    }
+    .services h3{
+        font-size: 20px;
+    }
+    .contact form{
+        padding: 20px 10px 30px;
+        margin: 0;
+    }
+    .contact form h2{
+        font-size: 30px;
+    }
+}
