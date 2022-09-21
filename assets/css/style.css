@@ -29,11 +29,14 @@ img{
 }
 .navbar a{
     font-weight: 700;
-    font-size: 14px;
+    font-size: 18px;
     transition: all 0.2s ease-in;
     text-decoration: none;
     color: var(--color2);
     letter-spacing: 1px;
+}
+#menu{
+    font-size: 20px;
 }
 .navbar a:hover, .navbar a.active{
     color: var(--color1);
@@ -67,6 +70,7 @@ h1{
 .services-service-last{
     display: flex;
     width: 100%;
+    gap: 15px;
     border: none;
     justify-content: center;
 }
@@ -183,23 +187,32 @@ footer ul li a:hover{
         flex-wrap: nowrap;
     }
     .navbar h4{
-        font-size: 16px;
+        font-size: 20px;
     }
     .navbar-brand h4{
         margin: 0;
     }
     .navbar .nav{
-        justify-content: space-between;
-        margin: 0;
-        width: 75%;
+        display: block;
+        position: absolute;
+        width: 70%;
+        top: 80px;
+        left: 30%;
+        background-color: rgba(255, 255, 255, 0.7);
+        border: 1px solid white;
+        border-top: none;
+        padding: 30px 0;
+        backdrop-filter: blur(15px);
+        display: none;
     }
-    .navbar .nav-link{
-        padding: 0;
-        width: auto;
+    .navbar .nav-link a{
+        padding: 10px 10px;
+        display: block;
         margin-left: 2px;
-    }
-    .navbar .nav-link:nth-of-type(1){
-        margin-left: 0;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        border-bottom: 1px solid gray;
     }
     .hero{
         background-position-x: right;
